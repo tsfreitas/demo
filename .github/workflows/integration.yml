@@ -16,6 +16,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           cache-read-only: false
+          dependency-graph: generate-and-submit
 
       - name: Build
         run: ./gradlew build --no-daemon
