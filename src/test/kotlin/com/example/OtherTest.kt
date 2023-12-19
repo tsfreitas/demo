@@ -9,5 +9,9 @@ class OtherTest : WordSpec({
         "be true" {
             true shouldBe true
         }
+
+        "be false" {
+            false shouldBe false
+        }
     }
 })
