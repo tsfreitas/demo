@@ -1,6 +1,7 @@
 package com.example
 
 import io.kotest.core.spec.style.WordSpec
+import io.kotest.matchers.comparables.shouldBeGreaterThan
 import io.kotest.matchers.shouldBe
 
 class OtherTest : WordSpec({
@@ -12,6 +13,10 @@ class OtherTest : WordSpec({
 
         "be false" {
             false shouldBe false
+        }
+
+        "be positive" {
+            10 shouldBeGreaterThan 0
         }
     }
 })
