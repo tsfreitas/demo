@@ -23,3 +23,5 @@ jobs:
 
       - name: Build
         run: ./gradlew build --no-daemon
+        env:
+         GRADLE_OPTS: '-Dorg.gradle.configureondemand=false -Dorg.gradle.parallel=false -Dkotlin.incremental=false -Dorg.gradle.jvmargs="-Xmx3g -Dfile.encoding=UTF-8"'
